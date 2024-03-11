@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReVITS: Retrieval-Augmented Text-to-Speech for Phonation Style Transfer</title>
+    <style>
+      div {
+        margin-bottom: 64px;
+      }
+      .first-col {
+        padding-right: 40px;
+        white-space: nowrap;
+      }
+      .text {
+        font-style: italic;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>ReVITS: Retrieval-Augmented Text-to-Speech for Phonation Style Transfe</h1>
+      </header>
+    </article>
+    <div>
+      <b>Abstract:</b>  Neural Text-to-Speech (TTS) systems have made significant progress in generating neutral and natural-sounding speech. Yet, the synthesis of expressive speech, with fine control over the output style especially, remains challenging. In this paper, we propose ReVITS, a novel approach that augments a TTS model with a retrieval step, enabling controlled and fine-grained phonation style transfer. This method leverages a database of reference utterances to define the target style. By incorporating an interpolation parameter, ReVITS facilitates a seamless blend of the original and target styles, thereby expanding the expressive capabilities of TTS systems. We investigate the potential of the proposed approach through a study on whispered speech style transfer. Both objective and subjective evaluations demonstrate the proposed approach's efficacy in gradually adapting the TTS output to the target style. However, we also observe  a trade-off between preserving speech naturalness and attaining style similarity, similar to kNN-VC.
+    </div>
+    <h3 id="toc_title">Contents</h3>
+    <div>
+      <a name="ss"><h2>Whispered Speech Style Transfer</h2></a>
+      <hr>
+      <table>
+        <tbody>
+        <tr>
+          <td class="first-col">&lambda = 0</td>
+          <td><audio controls="" preload="none"><source src="wavs/whisper/0.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">&lambda = 0.25</td>
+          <td><audio controls="" preload="none"><source src="wavs/whisper/25.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">&lambda = 0.50</td>
+          <td><audio controls="" preload="none"><source src="wavs/whisper/50.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">&lambda = 0.75</td>
+          <td><audio controls="" preload="none"><source src="wavs/whisper/75.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">&lambda = 1</td>
+          <td><audio controls="" preload="none"><source src="wavs/whisper/100.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
